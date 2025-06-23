@@ -10,7 +10,9 @@ var Button = function Button(_ref) {
   var label = _ref.label,
     onClick = _ref.onClick;
   return /*#__PURE__*/_react["default"].createElement("button", {
-    onClick: onClick,
+    onClick: function onClick() {
+      return alert('Hi');
+    },
     style: {
       padding: '10px',
       fontSize: '16px'
