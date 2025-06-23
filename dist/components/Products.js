@@ -65,7 +65,9 @@ var Products = function Products(_ref) {
         color: styles === null || styles === void 0 ? void 0 : styles.descColor
       }
     }, product.description), /*#__PURE__*/_react["default"].createElement("button", {
-      onClick: actions.handleBuy(product),
+      onClick: function onClick() {
+        actions.handleBuy(product);
+      },
       "data-payload": JSON.stringify(product),
       style: {
         marginTop: '10px',

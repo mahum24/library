@@ -41,7 +41,7 @@ const Products = ({ prop, actions, styles, states }) => {
             <p style={{ color: styles?.descColor }}>{product.description}</p>
 
             <button
-              onClick={actions.handleBuy(product)}
+              onClick={()=>{actions.handleBuy(product)}}
               data-payload={JSON.stringify(product)}
               style={{
                 marginTop: '10px',
