@@ -9,7 +9,7 @@ var _material = require("@mui/material");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 var Products = function Products(_ref) {
   var _styles;
-  var displayitems = _ref.displayitems,
+  var prop = _ref.prop,
     actions = _ref.actions;
   return /*#__PURE__*/_react["default"].createElement(_material.Box, {
     style: {
@@ -22,7 +22,7 @@ var Products = function Products(_ref) {
       gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
       gap: '20px'
     }
-  }, displayitems.map(function (product, index) {
+  }, prop.displayitems.map(function (product, index) {
     var _styles2, _styles3, _styles4, _styles5;
     return /*#__PURE__*/_react["default"].createElement("li", {
       key: index,
