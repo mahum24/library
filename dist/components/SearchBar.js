@@ -8,14 +8,14 @@ var _react = _interopRequireDefault(require("react"));
 var _material = require("@mui/material");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 var SearchBar = function SearchBar(_ref) {
-  var _styles;
   var states = _ref.states,
-    actions = _ref.actions;
+    actions = _ref.actions,
+    styles = _ref.styles;
   return /*#__PURE__*/_react["default"].createElement(_material.Box, {
     style: {
       padding: '20px',
       textAlign: 'center',
-      backgroundColor: (_styles = styles) === null || _styles === void 0 ? void 0 : _styles.background
+      backgroundColor: styles === null || styles === void 0 ? void 0 : styles.background
     }
   }, /*#__PURE__*/_react["default"].createElement("input", {
     defaultValue: states.query,

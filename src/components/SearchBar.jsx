@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 
-const SearchBar = ({ states, actions }) => {
+const SearchBar = ({ states, actions, styles }) => {
     return (
         <Box style={{ padding: '20px', textAlign: 'center', backgroundColor: styles?.background }}>
             <input

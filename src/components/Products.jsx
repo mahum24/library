@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
 
-const Products = ({ prop, actions }) => {
+const Products = ({ prop, actions, styles }) => {
 
     return (
         <Box style={{ padding: '20px', backgroundColor: styles?.background }}>
