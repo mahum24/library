@@ -14,3 +14,4 @@ Object.keys(_components).forEach(function (key) {
     }
   });
 });
+console.log(MyComponents);
