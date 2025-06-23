@@ -9,6 +9,7 @@ function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default":
 var Button = function Button(_ref) {
   var label = _ref.label,
     action = _ref.action;
+  console.log("Received action:", label, action);
   return /*#__PURE__*/_react["default"].createElement("button", {
     onClick: function onClick() {
       return action();
