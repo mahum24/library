@@ -6,9 +6,9 @@ const Button = ({ label, action }) => {
   return (
     <MUIButton
       onClick={action}
-      variant="contained"
+      variant="outline"
       size="medium"
-      sx={{ padding: '10px', fontSize: '16px',  backgroundColor: '#1976d2', }}
+      style={{ padding: '10px', fontSize: '16px',  backgroundColor: '#1976d2', }}
     >
       {label}
     </MUIButton>

@@ -13,9 +13,9 @@ var Button = function Button(_ref) {
   console.log("Received action:", label, action);
   return /*#__PURE__*/_react["default"].createElement(_material.Button, {
     onClick: action,
-    variant: "contained",
+    variant: "outline",
     size: "medium",
-    sx: {
+    style: {
       padding: '10px',
       fontSize: '16px',
       backgroundColor: '#1976d2'
