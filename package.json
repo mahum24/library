@@ -1,14 +1,21 @@
 {
   "name": "my-component-library",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "prepare": "tsc -p tsconfig.build.json"
+    "build": "babel src --out-dir dist",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
-    "react": "^18.3.0",       
-    "react-dom": "^18.3.0",
-    "next": "^14.2.0"   
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1"
   }
 }
