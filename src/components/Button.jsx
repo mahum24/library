@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = ({ label, onClick }) => {
+const Button = ({ label }) => {
   return (
     <button onClick={() => alert('Hi')} style={{ padding: '10px', fontSize: '16px' }}>
       {label}
