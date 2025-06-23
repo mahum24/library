@@ -3,15 +3,18 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _components = require("./components");
-Object.keys(_components).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (key in exports && exports[key] === _components[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _components[key];
-    }
-  });
+Object.defineProperty(exports, "Button", {
+  enumerable: true,
+  get: function get() {
+    return _Button["default"];
+  }
 });
-console.log(MyComponents);
+Object.defineProperty(exports, "Card", {
+  enumerable: true,
+  get: function get() {
+    return _Card["default"];
+  }
+});
+var _Button = _interopRequireDefault(require("./components/Button"));
+var _Card = _interopRequireDefault(require("./components/Card"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
