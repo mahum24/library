@@ -24,6 +24,5 @@
     ]
   },
   "dependencies": {
-    "my-component-library": "github:mahum24/library"
   }
 }
