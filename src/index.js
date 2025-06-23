@@ -1,2 +1,4 @@
-export { default as Card } from './components/Card';
-export { default as Button } from './components/Button';
+import Card from './components/Card';
+import Button from './components/Button';
+
+export { Card, Button };
