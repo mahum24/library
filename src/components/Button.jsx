@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Button = ({ label }) => {
+const Button = ({ label, action }) => {
   return (
-    <button onClick={() => console.log("heregvbhnjbghvbjh")} style={{ padding: '10px', fontSize: '16px' }}>
+    <button onClick={() => action() } style={{ padding: '10px', fontSize: '16px' }}>
       {label}
     </button>
   );
