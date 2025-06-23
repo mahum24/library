@@ -1,7 +1,9 @@
 {
   "name": "my-component-library",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "babel src --out-dir dist --copy-files"
   },
@@ -16,6 +18,12 @@
     "babel-preset-react-app": "^10.0.1"
   },
   "babel": {
-    "presets": ["@babel/preset-env", "@babel/preset-react"]
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "my-component-library": "github:mahum24/library"
   }
 }
